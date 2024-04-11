@@ -1,0 +1,12 @@
+<h1>Lista Pizze</h1>
+
+<div class="row row-cols-3">
+    <!-- Faccio un ngFor sulla listaGiochi -->
+    <!-- Attribute binding tra parentesi [] -->
+<app-pizza *ngFor="let pizza of listaPizze" [pizza] ="pizza" ></app-pizza>
+ 
+</div>
+
+<div class="row">
+  <app-add-pizza (onPizza)="onAggiungiPizza($event)"></app-add-pizza>
+</div>

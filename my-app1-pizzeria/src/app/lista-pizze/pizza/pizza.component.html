@@ -1,0 +1,10 @@
+
+<div  class="card" [ngClass]="{'bg-danger': pizza.nome == 'Marinara','bg-success': pizza.nome == 'Capricciosa', 'bg-warning':pizza.nome == '?'}" >
+    <img class="card-img-top" src="{{pizza.locandina}}" alt="Title" lenght="514" height="300"/>
+    <div class="card-body" >
+        <h4 class="card-title">Nome: {{pizza.nome}}</h4>
+        <p class="card-text"><strong>Tipologia:</strong>{{pizza.tipologia}}</p>
+        <p class="card-text"><strong>Ingredienti: </strong>{{pizza.ingredienti}}</p>
+        <p class="card-text"><strong>Prezzo: </strong>{{pizza.prezzo}} €</p>
+    </div>
+</div>

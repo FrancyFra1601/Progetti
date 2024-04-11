@@ -1,0 +1,47 @@
+<div class="container mb-3 shadow-lg">
+    
+    
+    <h3>Aggiungi una pizza</h3>
+    <button class="btn btn-primary"(click)="onAggiungiPizza()" >Aggiungi Pizza</button>
+    
+    <div class="col-6">
+      <div class="mb-3">
+        <label for="" class="form-label">Nome Pizza</label>
+        <!-- Two way databinding: associo un campo input con una prop di classe. Per poter utilizzare la direttiva ngModel devo importare i FormsModule nell'angular  app.module.ts -->
+        <input type="text" class="form-control" [(ngModel)]="nomePizza" /> <!-- ngModel è sia attributo sia evento -->
+      </div>
+    
+        <div class="mb-3">
+    
+        <div class="mb-3">
+            <label for="" class="form-label">ingredienti</label>
+            <input type="text" class="form-control" [(ngModel)]="ingredienti" />
+          </div>
+    
+          <label for="" class="form-label">tipologia</label>
+          <select multiple class="form-select form-select-lg" [(ngModel)]="tipologia">
+    
+            <option selected>Seleziona:</option>
+            <option value="bianca">bianca</option>
+            <option value="rossa">rossa</option>
+          </select>
+        </div>
+    
+        <div class="mb-3">
+          <label for="" class="form-label">Locandina</label>
+          <input type="text" class="form-control" [(ngModel)]="locandinaPizza" />
+        </div>
+    
+        <div class="mb-3">
+            <label for="" class="form-label">Prezzo</label>
+            <input type="text" class="form-control" [(ngModel)]="prezzo"  />
+    
+        </div>
+    
+      </div>
+      {{nomePizza}} - {{tipologia}}
+    
+    
+    
+    <!-- il metodo onAggiungiPizza si occuperà di emettere il nuovo gioco sfruttando l'event emitter -->
+</div>
