@@ -1,0 +1,25 @@
+{
+  "chitarre": [
+    {
+      "id": "0",
+      "marca": "eko",
+      "modello": "S300 metallic-blue",
+      "prezzo": 118,
+      "immagine": "https://www.bananamusic.it/214764-medium_default/eko-s-300-metallic-blue.jpg"
+    },
+    {
+      "id": "1",
+      "marca": "eko",
+      "modello": "VT380 Black",
+      "prezzo": 138,
+      "immagine": "https://www.ekoguitars.it/img/items/05130040_b.jpg"
+    },
+    {
+      "id": "2",
+      "marca": "Fender",
+      "modello": "stratocaster",
+      "prezzo": 788,
+      "immagine": "https://thumbs.static-thomann.de/thumb/padthumb600x600/pics/bdb/_43/439120/13122316_800.jpg"
+    }
+  ]
+}

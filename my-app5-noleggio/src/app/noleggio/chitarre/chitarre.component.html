@@ -1,0 +1,50 @@
+<h1>Lista Chitarre: </h1>
+<div class="row row-cols-3">
+   
+
+
+      <div class="card" *ngFor="let chitarra of mieChitarre; index as i"  [ngClass]="{green : chitarra.acquistabile, red: !chitarra.acquistabile}">
+         <img class="card-img-top" src={{chitarra.immagine}} alt=""/>
+         <div class="card-body">
+            <h4 class="card-title">modello:{{chitarra.modello}}</h4>
+            <p class="card-text">prezzo:{{chitarra.prezzo}}€</p>
+
+            <button class="btn btn-success" (click)="onAcquista(i)">
+               Acquista</button>
+               {{chitarra.acquistabile ? "noleggiabile" : "non noleggiabile"}}
+         </div>
+      </div>
+      
+      <div class="container">
+         <h1>Inserisci una chitarra: </h1>
+         <div class="row">
+            <div class="mb3">
+               <label for="" class="form-label">id</label>
+               <input type="text" class="form-control"
+               [(ngModel)]="id"/>
+            </div>
+            <div class="mb3">
+               <label for="" class="form-label">Marca</label>
+               <input type="text" class="form-control"
+               [(ngModel)]="marca"/>
+            </div>
+            <div class="mb3">
+               <label for="" class="form-label">Modello</label>
+               <input type="text" class="form-control"
+               [(ngModel)]="modello"/>
+            </div>
+            <div class="mb3">
+               <label for="" class="form-label">Prezzo</label>
+               <input type="text" class="form-control"
+               [(ngModel)]="prezzo"/>
+            </div>
+            <div class="mb3">
+               <label for="" class="form-label">Immagine</label>
+               <input type="text" class="form-control"
+               [(ngModel)]="immagine"/>
+            </div>
+            <button class="btn btn-primary" (click)="onAddChitarra() ">Add chitarra</button>
+         </div>
+      </div>
+
+</div>

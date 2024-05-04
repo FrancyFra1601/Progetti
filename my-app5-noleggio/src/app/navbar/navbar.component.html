@@ -1,0 +1,33 @@
+<nav
+    class="navbar navbar-expand-sm navbar-dark bg-dark"
+>
+<div class="logo">
+    <img src="https://www.guitarroom.it/wp-content/uploads/2020/11/guitarroom-logo-512x512-1.png" alt="Logo" height="100" width="100">
+</div>
+    <div class="container">
+        <a class="navbar-brand" href="#">Noleggio chitarre</a>
+        <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        ></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/']">Home</a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['/noleggio']">Noleggio </a>
+                </li>
+            </ul>
+           
+        </div>
+    </div>
+</nav>
